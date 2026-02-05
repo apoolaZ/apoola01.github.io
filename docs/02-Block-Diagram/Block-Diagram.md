@@ -6,19 +6,8 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
+The purpose of this block diagram is to showcase the components need to achieve the HMI portion of the team project. With that, there is the needed power source coming from a power adapter which is regulated by a voltage regulator, ensuring the board only recieves 3.3V. Furthermore, there is an LED as a test point for the project and push buttons which are digital inputs from the users to communicate on what they want to see from the OLED Screen. The OLED itself uses I2C communications which is why it is wired through RB2. This portion is reliant on wireless communications on the team diagram, which is why it is left in the individual as to show the connections to the ESP32
 
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+## Individual Block Diagram 
 
-
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
-
-![Example of Indivial Block diagram ](individual-block-diagram.png)
+![Abriana's Indivial Block diagram ](diagram.png)
