@@ -10,4 +10,4 @@ The purpose of this block diagram is to showcase the components need to achieve 
 
 ## Individual Block Diagram 
 
-![Abriana's Indivial Block diagram ](diagram.png)
+![Abriana's Indivial Block diagram ](draft.png)
