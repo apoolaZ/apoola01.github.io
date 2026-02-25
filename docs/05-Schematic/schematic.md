@@ -4,13 +4,13 @@ title: Module Schematic
 
 ## Overview
 
-This schematic is design to support .... (highlight functionally, power, and controller).
+This schematic is design to support the HMI Module of Team 307's Amphibious Waste Collection System. The goal of this module is to allow users to interact with the OLED by using push buttons to go through a series of menu options to recieve data. The main chip used for this project is the ESP32 as it is able to support I2C which is needed for the project. 
 
 
-![schematic](Screenshot.png){style width:"350" height:"300;"}
-**Figure ##:** Showing a example schematic.
+![schematic](OLEDSch.png){style width:"350" height:"300;"}
+**Figure 1:** OLED schematic.
 
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](ExampleSchematic.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic as a PDF download is available [*here*](OLEDSsch.pdf), and the Zip folder of the project [*here*](OLEDSchZ.zip).
