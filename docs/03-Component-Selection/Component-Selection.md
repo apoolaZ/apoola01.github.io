@@ -8,31 +8,48 @@ This page outlines the main components selected for the Human Machine Interface 
 
 ## Power Source
 
-### Choice 1:
+### Choice 1: CONN PWR JACK 1.35X3.5MM SOLDER
+
+![TH Barrel Jack](TH_Barrel.webp)
+
+* **Price:** $0.67/each
+* **Product Link:** [Pj-007](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices-/PJ-007/263523?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336967819&gbraid=0AAAAADrbLlgs4hw9LztVYDF5uuUEHngrn&gclid=Cj0KCQiAk6rNBhCxARIsAN5mQLsoOYExZJqYb1FyfbmE2W-5naa-h_G_fIaPOKq9fLMpaS6GJ0RPOZUaAtrQEALw_wcB)
 
 | **Pros** | **Cons** |
 | ----------------- | ----------------- |
-|  |  | 
-|  |  | 
-|  |  |
-|  |  | 
-### Choice 2:
+| Inexpensive compared to others | Needs correct orientation | 
+| Easy to install | polarity needs to correct | 
+| Already given CAD Model | Familar |
+
+### Choice 2: Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Surface Mount
+
+![SMD Barrel Jack](SM_Barrel.jpg)
+
+* **Price:** $0.91/each
+* **Product Link:** [PJ-006A-SMT-TR](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-006A-SMT-TR/408456)
 
 | **Pros** | **Cons** |
 | ----------------- | ----------------- |
-|  |  | 
-|  |  | 
-|  |  |
-|  |  | 
+| Can handle temperature when soldering | Expensive | 
+| Is a Surface Mount | Harder to place in PCB design | 
+| Has 5,000 cycles of life| --- |
 
-### Choice 3:
+### Choice 3: CONN PWR JACK 2X5.5MM SOLDER
+
+![K_Barrel Jack](K_Barrel.webp)
+
+* **Price:** $0.69/each
+* **Product Link:** [KLDX-0202-A](https://www.digikey.com/en/products/detail/kycon-inc/KLDX-0202-A/9975992)
 
 | **Pros** | **Cons** |
 | ----------------- | ----------------- |
-|  |  | 
-|  |  | 
-|  |  |
-|  |  | 
+| A TH component | Orientation is different from classic | 
+| Detailed Datasheet | Different CAD Model | 
+| Operating Temperature: -25˚C to +85˚C | --- |
+
+### Selected Component
+
+The component selected for the power source is option 1: CONN PWR JACK 1.35X3.5MM SOLDER. The main reason is the pricing being significantly cheaper if ordered in bulk as this is a critical piece for the PCB. Furthermore, this item is given in class and something that we are familiar when working with it for other labs throughout the course. 
 
 ## Power Regulator
 
