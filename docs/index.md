@@ -30,7 +30,8 @@ The goal of this subsystem is to provide a HMI Module for the Team 307 which all
 
 * To review the details and relationships between the system’s components, refer to the [Block Diagram](https://apoolaz.github.io/apoola01.github.io/02-Block-Diagram/Block-Diagram/) section of the datasheet.
 * To review the system’s components, refer to the [Component Selection](https://apoolaz.github.io/apoola01.github.io/03-Component-Selection/Component-Selection/).
-* To review power distribution, refer to the [Power Budget](https://apoolaz.github.io/apoola01.github.io/09-Power-Budget/Power-Budget/).
-* To review the microcontroller's layout, refer to the [Microcontroller](https://apoolaz.github.io/apoola01.github.io/08-Microcontroller/Microcontroller/).
 * To review the layout of the individual subsystem, refer to the [Schematic](https://apoolaz.github.io/apoola01.github.io/05-Schematic/schematic/).
+* To review the microcontroller's layout, refer to the [Microcontroller](https://apoolaz.github.io/apoola01.github.io/08-Microcontroller/Microcontroller/).
+* To review power distribution, refer to the [Power Budget](https://apoolaz.github.io/apoola01.github.io/09-Power-Budget/Power-Budget/).
+
 
