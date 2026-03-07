@@ -67,6 +67,7 @@ The component selected for the power source is option 1: CONN PWR JACK 1.35X3.5M
 
 
 ### Choice 2: Switching Regulator IC Positive Fixed 3.3V 
+
 ![SOT 3.3 Voltage Regulator](VOLT.webp)
 
 * **Price:** $0.22/each
@@ -97,31 +98,53 @@ The selected component for this project is the second option: Switching Regulato
 
 ## OLED Screen
 
-### Choice 1:
+### Choice 1: OLED LCD Display Board Module
+
+![ClassOLED](OLEDA.jpg)
+
+* **Price:** Unknown
+* **Product Link:** [OLED Screen](https://www.amazon.com/Songhe-0-96-inch-I2C-Raspberry/dp/B085WCRS7C/)
 
 | **Pros** | **Cons** |
 | ----------------- | ----------------- |
-|  |  | 
-|  |  | 
-|  |  |
-|  |  | 
+| Familiar as it was a lab | Currently unavalible to order | 
+| pinouts are simple | Screen is small | 
+| Clear display | Very coding heavy |
 
-### Choice 2:
+### Choice 2: GRAPHIC DISPLAY STN WHITE (BLUE)
 
+![BlueDisplay](OLEDB.webp)
+
+* **Price:** $10.95/each
+* **Product Link:** [Graphic Display](https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-C12832A1Z-NSW-BBW-3V3/2059235)
+  
 | **Pros** | **Cons** |
 | ----------------- | ----------------- |
-|  |  | 
-|  |  | 
-|  |  |
-|  |  | 
+| Has a blue screen | Expensive | 
+| Multiple functions | Has multiple pins that need to be connected | 
+| --- | Smaller screen than the first choice |
 
-### Choice 3:
+### Choice 3: DISPLAY, COB 128x32 OLED, White
 
+![WhiteOLED](OLEDC.jpg)
+
+* **Price:** $11.89/each
+* **Product Link:** [Digikey OLED](https://www.digikey.com/en/products/detail/midas-displays/MDOB128032HV-WS/28220377?gclsrc=aw.ds&gad_source=1&gad_campaignid=20228387720&gbraid=0AAAAADrbLlibQhTWJak6K7PSw4Xuq7jNl&gclid=Cj0KCQiAk6rNBhCxARIsAN5mQLvomzdpiGHVepYw0IxBvSnjo4kS-gLfjGHOwwAsr3w6Kzqf_6An43kaArQzEALw_wcB)
+  
 | **Pros** | **Cons** |
 | ----------------- | ----------------- |
-|  |  | 
-|  |  | 
-|  |  |
-|  |  | 
+| Can have input voltage around 2.6 ~ 5.2V | Super Expensive | 
+| Has chip select input | Same screen length as option 2 | 
+| Datasheet inlcuded | Multiple Pinouts |
 
 ### Selected Components:
+
+The component selected is option 1: OLED LCD Display Board Module. The reason why this was choosen was because it was a component given throughout the course which allowed us to learn more about this component. OLED screens are naturally expensive which is why the class one was selected for easy access. 
+
+## Summary Table of Final Selection
+
+| **Component** | **Selection** | **Rationale** |
+| ----------------- | ----------------- | ----------------- |
+| OLED Display | [OLED Screen](https://www.amazon.com/Songhe-0-96-inch-I2C-Raspberry/dp/B085WCRS7C/) | This part was given in class which makes it easier to work with as all the programs that are needed are downloaded on the computer. |
+| Power Regulator | [AP2112K-3.3TRG1](https://www.digikey.com/en/products/detail/diodes-incorporated/AP2112K-3-3TRG1/4470746) | Can be easily soldered onto the board and has the correct pinouts that are required for the course. It is also inexpensive while ensuring minimal noise for the I2C. |
+| Power Source | [Pj-007](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices-/PJ-007/263523?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336967819&gbraid=0AAAAADrbLlgs4hw9LztVYDF5uuUEHngrn&gclid=Cj0KCQiAk6rNBhCxARIsAN5mQLsoOYExZJqYb1FyfbmE2W-5naa-h_G_fIaPOKq9fLMpaS6GJ0RPOZUaAtrQEALw_wcB) | It is the standard barreljack and can be easily soldered onto the board. |
