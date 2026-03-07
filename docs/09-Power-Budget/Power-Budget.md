@@ -12,7 +12,7 @@ The point of this power budget is to estimate the power required to operate the 
 
 ## Conclusions
 
-From the prepare Power Budget, the HMI module will be able to safely function as it meets the power requirements of each compinent. Based on the numbers, the 3.3V regulator can have a load between 537mA to 671mA (this is based off the 25% safety margin). This is proven to be operational based of the voltage regulator's datasheet. Thanks to that all supporting components can safely operate. 
+From the prepare Power Budget, the HMI module will be able to safely function as it meets the power requirements of each compinent. Based on the numbers, the 3.3V regulator can have a load between 537mA to 671mA (this is based off the 25% safety margin). This is proven to be operational based of the voltage regulator's datasheet. Thanks to that, all supporting components can safely operate. 
 
 ## Resources
 
