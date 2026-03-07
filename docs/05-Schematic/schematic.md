@@ -13,4 +13,4 @@ This schematic is design to support the HMI Module of Team 307's Submersible Exp
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](OLEDSch.pdf), and the Zip folder of the project [*here*](OLEDSchZ.zip).
+The schematic as a PDF download is available [*here*](OLEDSch.pdf), and the Zip folder of the project [*here*](OLEDSchematic.zip).
