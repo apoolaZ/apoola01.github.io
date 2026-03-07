@@ -26,7 +26,7 @@
 
     
       
-        <title>Microcontroller - EGR 314 - Poola DataSheet</title>
+        <title>Module Microcontroller Selection - EGR 314 - Poola DataSheet</title>
       
     
     
@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -120,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Microcontroller
+              Module Microcontroller Selection
             
           </span>
         </div>
@@ -732,15 +737,70 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Module Microcontroller Selection
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Microcontroller
+    Module Microcontroller Selection
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esp32-table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESP32 Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pin-layout-for-esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pin layout for ESP32
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -874,6 +934,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esp32-table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESP32 Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pin-layout-for-esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pin layout for ESP32
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -895,7 +990,100 @@
   
 
 
-  <h1>Microcontroller</h1>
+  <h1>Module Microcontroller Selection</h1>
+
+<h2 id="overview">Overview</h2>
+<p>This page will go over the selection of the microcontroller used for the HMI module. It would focus on the ESP32 and how the configuration were made to ensure connectivity for the OLED and communication for the Team 307's Submersible Exploration Device. </p>
+<h2 id="esp32-table-of-contents">ESP32 Table of Contents</h2>
+<table>
+<thead>
+<tr>
+<th>ESP Info</th>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESP32-S3-WROOM-1-N8R8</td>
+<td><a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N8R8/16705630?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=20228387720&amp;gbraid=0AAAAADrbLlibQhTWJak6K7PSw4Xuq7jNl&amp;gclid=Cj0KCQiAk6rNBhCxARIsAN5mQLu1rFLmtxPV_GK7DUA-tHljgNQjzwU1_xEu0L1qGVhMom4Mq7k5_AkaAg35EALw_wcB">Product Link</a></td>
+</tr>
+<tr>
+<td>Datasheet</td>
+<td><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf">ESP32-S3-WROOM-1</a></td>
+</tr>
+<tr>
+<td>Vendor</td>
+<td><a href="https://www.digikey.com/en/supplier-centers/espressif-systems?_gl=1*zml3xs*_up*MQ..*_gs*MQ..&amp;gclid=Cj0KCQiAk6rNBhCxARIsAN5mQLu1rFLmtxPV_GK7DUA-tHljgNQjzwU1_xEu0L1qGVhMom4Mq7k5_AkaAg35EALw_wcB&amp;gclsrc=aw.ds&amp;gbraid=0AAAAADrbLlibQhTWJak6K7PSw4Xuq7jNl">Espressif Systems</a></td>
+</tr>
+<tr>
+<td>Unit cost</td>
+<td>$6.13/each</td>
+</tr>
+<tr>
+<td>Supply Voltage Range</td>
+<td>3V ~ 3.6V</td>
+</tr>
+<tr>
+<td>Absolute Maximum current</td>
+<td>500mA</td>
+</tr>
+<tr>
+<td>Maximum GPIO current <br> (per pin)</td>
+<td>40mA</td>
+</tr>
+<tr>
+<td>Supports External Interrupts?</td>
+<td>Yes (All GPIOs)</td>
+</tr>
+<tr>
+<td>Programming Hardware</td>
+<td>Micropython</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pin-layout-for-esp32">Pin layout for ESP32</h2>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th># Available</th>
+<th>Needed</th>
+<th>Associated Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UART</td>
+<td>3</td>
+<td>1</td>
+<td>Rx - RXD0 and Tx - TXD0</td>
+</tr>
+<tr>
+<td>I2C</td>
+<td>38</td>
+<td>2</td>
+<td>IO15 and IO16</td>
+</tr>
+<tr>
+<td>GPIO</td>
+<td>38</td>
+<td>8</td>
+<td>IO6/IO7/IO11/IO12/IO13/IO14/IO46/IO23</td>
+</tr>
+<tr>
+<td>LED</td>
+<td>38</td>
+<td>2</td>
+<td>IO10 and IO5</td>
+</tr>
+<tr>
+<td>USB Programmer</td>
+<td>2</td>
+<td>2</td>
+<td>IO19 and IO20</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -903,7 +1091,8 @@
 
 
 
-
+  
+  
 
 
 
