@@ -669,18 +669,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-table" class="md-nav__link">
+  <a href="#bill-of-materials" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials (Example as Table)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-image" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bill of Materials (Example as Image)
+      Bill of Materials
     </span>
   </a>
   
@@ -883,18 +874,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-table" class="md-nav__link">
+  <a href="#bill-of-materials" class="md-nav__link">
     <span class="md-ellipsis">
-      Bill of Materials (Example as Table)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-image" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bill of Materials (Example as Image)
+      Bill of Materials
     </span>
   </a>
   
@@ -935,59 +917,80 @@
   <h1>Module Bill of Materials</h1>
 
 <h2 id="overview">Overview</h2>
-<p>Written context needs to added!</p>
-<blockquote>
-<p>Pick <strong>ONLY</strong> one of the two examples show below. <strong>Remove</strong> the other example. <strong>REMOVE notations within the remaining section about being an example.</strong>  </p>
-</blockquote>
-<h2 id="bill-of-materials-example-as-table">Bill of Materials (Example as Table)</h2>
-<p><em>Table ##: An example of one approach to adding your BOM table to this section.</em></p>
+<p>This page goes over the materials that are needed for the HMI Module to ensure. Some of the parts (ESP32, Power Regulator, Test Points) were ordered through Arizona State University while other parts were personally funded. The Bill of Materials is based off the <a href="https://apoolaz.github.io/apoola01.github.io/05-Schematic/schematic/">schematic</a> and the <a href="https://apoolaz.github.io/apoola01.github.io/03-Component-Selection/Component-Selection/">component selection</a> to determine what parts were needed to order.</p>
+<h2 id="bill-of-materials">Bill of Materials</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;"><strong>Part Name/Description</strong></th>
-<th style="text-align: left;"><strong>Qty</strong></th>
-<th style="text-align: left;"><strong>Unit Cost</strong></th>
-<th style="text-align: left;"><strong>Total Cost</strong></th>
-<th style="text-align: left;"><strong>Manufacture</strong></th>
-<th style="text-align: left;"><strong>Manufacturer #</strong></th>
-<th style="text-align: left;"><strong>Vendor Link</strong></th>
-<th style="text-align: left;"><strong>Datasheet Link</strong></th>
-<th style="text-align: left;"><strong>Schematic Reference Designators</strong></th>
+<th style="text-align: left;">Part Name/ Description</th>
+<th style="text-align: left;">QTY</th>
+<th style="text-align: left;">Unit Cost</th>
+<th style="text-align: left;">Total Cost</th>
+<th style="text-align: left;">Manufacture</th>
+<th style="text-align: left;">Manufacturer #</th>
+<th style="text-align: left;">Vendor Link</th>
+<th style="text-align: left;">Datasheet Link</th>
+<th style="text-align: left;">Schematic Ref. Designators</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">8-bit SIPO/SISO Shift Register, SOIC-16 package</td>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">$0.49</td>
-<td style="text-align: left;">$ 0.49</td>
-<td style="text-align: left;">NXP</td>
-<td style="text-align: left;">74HC595D,112</td>
-<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC595D-112/763550">DigiKey</a></td>
-<td style="text-align: left;"><a href="https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf">datasheet link</a></td>
+<td style="text-align: left;">Buck Switching Regulator IC Positive Adjustable 1.2V 1 Output 3A TO-263-6, D2PAK (5 Leads + Tab), TO-263BA</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">$5.91</td>
+<td style="text-align: left;">$11.82</td>
+<td style="text-align: left;">UMW</td>
+<td style="text-align: left;">LM2596HVS-ADJ</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/umw/LM2596HVS-ADJ/16842152?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=21136823955&amp;gbraid=0AAAAADrbLljZpI0SsZ4sJXFNmhFGfhN2I&amp;gclid=Cj0KCQjwgr_NBhDFARIsAHiUWr6UDMAJC9ENGULzuyYLmnFkEWxnuukVFu1KhG3kBfGe4BE9L-kEGiUaAlgAEALw_wcB">Vendor</a></td>
+<td style="text-align: left;"><a href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2577/UMW%20LM2596_HV.pdf?_gl=1*fmqm0t*_up*MQ..*_gs*MQ..&amp;gclid=Cj0KCQjwgr_NBhDFARIsAHiUWr6UDMAJC9ENGULzuyYLmnFkEWxnuukVFu1KhG3kBfGe4BE9L-kEGiUaAlgAEALw_wcB&amp;gclsrc=aw.ds&amp;gbraid=0AAAAADrbLljZpI0SsZ4sJXFNmhFGfhN2I">Datasheet</a></td>
 <td style="text-align: left;">U1</td>
 </tr>
 <tr>
-<td style="text-align: left;">0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package</td>
-<td style="text-align: left;">10</td>
-<td style="text-align: left;">0.2750</td>
-<td style="text-align: left;">$2.75</td>
-<td style="text-align: left;">KEMET</td>
-<td style="text-align: left;">C0805F104K5RACTU</td>
-<td style="text-align: left;">PRLTA 109</td>
-<td style="text-align: left;">n/a</td>
-<td style="text-align: left;">C2, C4, C6, C7, C8, C9, C10, C11, C12, C16</td>
+<td style="text-align: left;">Bluetooth, WiFi 802.11b/g/n, Bluetooth v5.0 Transceiver Module 2.4GHz PCB Trace Surface Mount (ESP32)</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">$5.06</td>
+<td style="text-align: left;">$10.12</td>
+<td style="text-align: left;">Espressif</td>
+<td style="text-align: left;">ESP32-S3-WROOM-1-N4</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639">Vendor</a></td>
+<td style="text-align: left;"><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf">Datasheet</a></td>
+<td style="text-align: left;">U2</td>
+</tr>
+<tr>
+<td style="text-align: left;">PC TEST POINT MINIATURE RED</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">$0.28</td>
+<td style="text-align: left;">$4.16</td>
+<td style="text-align: left;">Keystone Electronics</td>
+<td style="text-align: left;">5000</td>
+<td style="text-align: left;"><a href="https://www.keyelco.com/userAssets/file/K75p62.pdf">Vendor</a></td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/keystone-electronics/5000/255326">Datasheet</a></td>
+<td style="text-align: left;">TP1, TP2, TP3, TP4, TP5, TP6, TP7, TP8</td>
+</tr>
+<tr>
+<td style="text-align: left;">5600PCS 0805 SMD Resistor Kit from 0Ω to 10MΩ 1%, Electronics Component Assortment with Resistors, Capacitors, Diodes, Transistors, IC, Inductors, LEDs Sample Book for DIY and Repair</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$29.90</td>
+<td style="text-align: left;">$29.90</td>
+<td style="text-align: left;">EGSCST</td>
+<td style="text-align: left;">B0DZXQPFHP</td>
+<td style="text-align: left;"><a href="https://www.amazon.com/EGSCST-Electronics-Assortment-Capacitors-Transistors/dp/B0DZXQPFHP/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.OfRWEABdLA3kZNJHHYAVfZ4YJEW0lG5rjM_ZGk1NJwz6u2tDkRlYrmb8-QBM5cKSXuiTFUlcwfXikBKYKCMwEZWIxGv3DG40NdoL-VYJlP6V5Oa3DiArBIAjMEkbnkzY-UbCXw-CaH4PHLVXwFoVVuJXPWjp1K2nEmG0MF_K_SSV9xtbp-fNMDuI_VKO1PGfGyesvfGc4V5L1YS4Ksu6CqMKMXBJCiR8K1aiBWHSucE.w-NP-ytdijrmRG2kkppWNjyL2NDtBwMBDma-0-UOqEU&amp;dib_tag=se&amp;keywords=smd%2Bkit&amp;qid=1773159525&amp;sr=8-1-spons&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&amp;th=1">Vendor</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">R1, R2, R3, R4, R5, R6, R7, R8, C1, C2, C3, D1, D2, D3</td>
+</tr>
+<tr>
+<td style="text-align: left;">BOJACK T1.5AL250V 5x20mm 1.5A 250V Slow Blow Fuses 1.5 amp 250 Volt 0.2 x 0.78 Inch Glass Tube Time-delay Fuses (Pack of 20)</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">6.99</td>
+<td style="text-align: left;">BOJACK</td>
+<td style="text-align: left;">B07X1KCTZT</td>
+<td style="text-align: left;"><a href="https://www.amazon.com/BOJACK-T1-5AL250V-5x20mm-Fuses-Time-delay/dp/B07X1KCTZT?pd_rd_w=UGsBO&amp;content-id=amzn1.sym.28c64fbb-22b3-4b43-9c44-fc03d50fe5f9&amp;pf_rd_p=28c64fbb-22b3-4b43-9c44-fc03d50fe5f9&amp;pf_rd_r=G0HMJS2JFA7NB2XMD7YG&amp;pd_rd_wg=kL61W&amp;pd_rd_r=5b6eba08-d15e-42b4-a2a7-87973236a586&amp;pd_rd_i=B07X1KCTZT&amp;psc=1&amp;ref_=pd_bap_d_grid_rp_hxwhrp_sspa_dk_bia_0_3_i">Vendor</a></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">F1</td>
 </tr>
 </tbody>
 </table>
-<p>Note: Setting it up as a table is nice because it is completely viewable without scaling issues. <ins>Downside</ins> is that you have to do the math.</p>
-<ul>
-<li>You could also import your BOM via a screenshot of the spreadsheet created BOM</li>
-</ul>
-<h2 id="bill-of-materials-example-as-image">Bill of Materials (Example as Image)</h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../BOM-Screenshot.png" data-desc-position="bottom"><img _2000_="&quot;2000&quot;" alt="" src="../BOM-Screenshot.png" style="style" width:="width:"></a>
-<strong>Figure ##:</strong> Example Bill of Materials as a screenshot.</p>
-<p>As you can see, the text can be difficult to read without opening the image.</p>
 <h2 id="resouce">Resouce</h2>
 <p>The Bill of Material as a PDF download is available <a href="../PDF_For_BOM_EXAMPLE.pdf"><em>here</em></a>.</p>
 
