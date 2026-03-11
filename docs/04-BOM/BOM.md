@@ -19,7 +19,3 @@ This page goes over the materials that are needed for the HMI Module to ensure. 
 | 5600PCS 0805 SMD Resistor Kit from 0Ω to 10MΩ 1%, Electronics Component Assortment with Resistors, Capacitors, Diodes, Transistors, IC, Inductors, LEDs Sample Book for DIY and Repair  | 1 | $29.90 | $29.90 | EGSCST | B0DZXQPFHP | [Vendor](https://www.amazon.com/EGSCST-Electronics-Assortment-Capacitors-Transistors/dp/B0DZXQPFHP/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.OfRWEABdLA3kZNJHHYAVfZ4YJEW0lG5rjM_ZGk1NJwz6u2tDkRlYrmb8-QBM5cKSXuiTFUlcwfXikBKYKCMwEZWIxGv3DG40NdoL-VYJlP6V5Oa3DiArBIAjMEkbnkzY-UbCXw-CaH4PHLVXwFoVVuJXPWjp1K2nEmG0MF_K_SSV9xtbp-fNMDuI_VKO1PGfGyesvfGc4V5L1YS4Ksu6CqMKMXBJCiR8K1aiBWHSucE.w-NP-ytdijrmRG2kkppWNjyL2NDtBwMBDma-0-UOqEU&dib_tag=se&keywords=smd%2Bkit&qid=1773159525&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)  | \- | R1, R2, R3, R4, R5, R6, R7, R8, C1, C2, C3, D1, D2, D3 |
 | BOJACK T1.5AL250V 5x20mm 1.5A 250V Slow Blow Fuses 1.5 amp 250 Volt 0.2 x 0.78 Inch Glass Tube Time-delay Fuses (Pack of 20\)  | 1 |  | 6.99 | BOJACK | B07X1KCTZT | [Vendor](https://www.amazon.com/BOJACK-T1-5AL250V-5x20mm-Fuses-Time-delay/dp/B07X1KCTZT?pd_rd_w=UGsBO&content-id=amzn1.sym.28c64fbb-22b3-4b43-9c44-fc03d50fe5f9&pf_rd_p=28c64fbb-22b3-4b43-9c44-fc03d50fe5f9&pf_rd_r=G0HMJS2JFA7NB2XMD7YG&pd_rd_wg=kL61W&pd_rd_r=5b6eba08-d15e-42b4-a2a7-87973236a586&pd_rd_i=B07X1KCTZT&psc=1&ref_=pd_bap_d_grid_rp_hxwhrp_sspa_dk_bia_0_3_i)  | \- | F1 |
 
-
-## Resouce
-
-The Bill of Material as a PDF download is available [*here*](PDF_For_BOM_EXAMPLE.pdf).
