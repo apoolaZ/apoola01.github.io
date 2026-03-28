@@ -24,7 +24,7 @@
 
     
       
-        <title>API - EGR 314 - Poola DataSheet</title>
+        <title>API Message Definitions (OLED Subsystem) - EGR 314 - Poola DataSheet</title>
       
     
     
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API
+              API Message Definitions (OLED Subsystem)
             
           </span>
         </div>
@@ -831,7 +831,7 @@
           
   
   <span class="md-ellipsis">
-    API
+    API Message Definitions (OLED Subsystem)
   </span>
   
 
@@ -842,7 +842,7 @@
         
   
   <span class="md-ellipsis">
-    API
+    API Message Definitions (OLED Subsystem)
   </span>
   
 
@@ -867,6 +867,93 @@
       Overview
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Message Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-type-3-distance-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 3 - Distance Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-5-depthpressure-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 5 - Depth/Pressure Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-6-temperature-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 6 - Temperature Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-7-hmi-display-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 7 - HMI Display Update
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-8-hmi-button-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 8 - HMI Button Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-10-system-status-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 10 - System Status Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-11-error-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 11 - Error Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-12-emergency-stop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 12 - Emergency Stop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -919,6 +1006,93 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#message-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Message Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-type-3-distance-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 3 - Distance Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-5-depthpressure-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 5 - Depth/Pressure Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-6-temperature-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 6 - Temperature Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-7-hmi-display-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 7 - HMI Display Update
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-8-hmi-button-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 8 - HMI Button Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-10-system-status-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 10 - System Status Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-11-error-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 11 - Error Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-type-12-emergency-stop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Type 12 - Emergency Stop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -942,10 +1116,336 @@
   
 
 
-  <h1>API</h1>
+  <h1>API Message Definitions (OLED Subsystem)</h1>
 
 <hr>
 <h2 id="overview">Overview</h2>
+<p>For Team 307's submersible exploration device, we will be using a daisy chain network with UART to send messages within one another which came from Team 307's <a href="https://egr-314-team-307-spring-2026.github.io/Team307.github.io/04-Team-Block-Diagram/Team-Diagram/">Message Structure</a>. The communication roles for the UART in this module is split into two:</p>
+<ul>
+<li><strong>Receives:</strong> distance, pressure, temperature, status, errors, emergency stop</li>
+<li><strong>Sends:</strong> HMI display updates, HMI button events, optional status requests</li>
+</ul>
+<h2 id="message-types">Message Types</h2>
+<h3 id="message-type-3-distance-value">Message Type 3 - Distance Value</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte(s)</th>
+<th>Type</th>
+<th>Variable Name</th>
+<th>Min</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Message Type</td>
+<td>1-2</td>
+<td>uint16_t</td>
+<td>message_type</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Distance</td>
+<td>3-4</td>
+<td>uint16_t</td>
+<td>distance_value</td>
+<td>0</td>
+<td>4000</td>
+</tr>
+<tr>
+<td>Padding</td>
+<td>5-58</td>
+<td>uint8_t[]</td>
+<td>padding</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-5-depthpressure-value">Message Type 5 - Depth/Pressure Value</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte(s)</th>
+<th>Type</th>
+<th>Variable Name</th>
+<th>Min</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Message Type</td>
+<td>1-2</td>
+<td>uint16_t</td>
+<td>message_type</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Depth/Pressure</td>
+<td>3-4</td>
+<td>uint16_t</td>
+<td>pressure_value</td>
+<td>0</td>
+<td>10000</td>
+</tr>
+<tr>
+<td>Padding</td>
+<td>5-58</td>
+<td>uint8_t[]</td>
+<td>padding</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-6-temperature-value">Message Type 6 - Temperature Value</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte(s)</th>
+<th>Type</th>
+<th>Variable Name</th>
+<th>Min</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Message Type</td>
+<td>1-2</td>
+<td>uint16_t</td>
+<td>message_type</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>3-4</td>
+<td>uint16_t</td>
+<td>temperature_c</td>
+<td>0</td>
+<td>125</td>
+</tr>
+<tr>
+<td>Padding</td>
+<td>5-58</td>
+<td>uint8_t[]</td>
+<td>padding</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-7-hmi-display-update">Message Type 7 - HMI Display Update</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte(s)</th>
+<th>Type</th>
+<th>Variable Name</th>
+<th>Min</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Message Type</td>
+<td>1-2</td>
+<td>uint16_t</td>
+<td>message_type</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Display Page</td>
+<td>3</td>
+<td>uint8_t</td>
+<td>display_page</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Display Value</td>
+<td>4-5</td>
+<td>uint16_t</td>
+<td>display_value</td>
+<td>0</td>
+<td>9999</td>
+</tr>
+<tr>
+<td>Padding</td>
+<td>6-58</td>
+<td>uint8_t[]</td>
+<td>padding</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-8-hmi-button-event">Message Type 8 - HMI Button Event</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte(s)</th>
+<th>Type</th>
+<th>Variable Name</th>
+<th>Min</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Message Type</td>
+<td>1-2</td>
+<td>uint16_t</td>
+<td>message_type</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Button ID</td>
+<td>3</td>
+<td>uint8_t</td>
+<td>button_id</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Event</td>
+<td>4</td>
+<td>uint16_t</td>
+<td>button_event</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Padding</td>
+<td>5-58</td>
+<td>uint8_t[]</td>
+<td>padding</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-10-system-status-response">Message Type 10 - System Status Response</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte(s)</th>
+<th>Type</th>
+<th>Variable Name</th>
+<th>Min</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Message Type</td>
+<td>1-2</td>
+<td>uint16_t</td>
+<td>message_type</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Status Code</td>
+<td>3</td>
+<td>uint8_t</td>
+<td>status_code</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Padding</td>
+<td>4-58</td>
+<td>uint8_t[]</td>
+<td>padding</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-11-error-code">Message Type 11 - Error Code</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte(s)</th>
+<th>Type</th>
+<th>Variable Name</th>
+<th>Min</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Message Type</td>
+<td>1-2</td>
+<td>uint16_t</td>
+<td>message_type</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Error Code</td>
+<td>3-4</td>
+<td>uint8_t</td>
+<td>error_code</td>
+<td>0</td>
+<td>999</td>
+</tr>
+<tr>
+<td>Padding</td>
+<td>5-58</td>
+<td>uint8_t[]</td>
+<td>padding</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-type-12-emergency-stop">Message Type 12 - Emergency Stop</h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Byte(s)</th>
+<th>Type</th>
+<th>Variable Name</th>
+<th>Min</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Message Type</td>
+<td>1-2</td>
+<td>uint16_t</td>
+<td>message_type</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Padding</td>
+<td>3-58</td>
+<td>uint8_t[]</td>
+<td>padding</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
 
 
 
