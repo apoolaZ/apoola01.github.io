@@ -6,7 +6,9 @@ tags:
 ---
 
 ## Overview
-The purpose of this block diagram is to showcase the components need to achieve the HMI portion of the team project. With that, there is the needed power source coming from a power adapter which is regulated by a voltage regulator, ensuring the board only recieves 3.3V. Furthermore, there is an LED(IO5) as a test point for the project and push buttons which are digital inputs from the users to communicate on what they want to see from the OLED Screen. The OLED itself uses I2C communications which is why it is wired through IO38(SCL) and IO41(SDA). There is also a USB-B to Micro USB connector that is needed which is why it is connected into both GPIO19(IO13) and GPIO20(14) as on the datasheet those two GPIO's are the only ones who directly connect to the USB communicator.
+The purpose of this block diagram is to showcase the components need to achieve the HMI portion of the team project. With that, there is the needed power source coming from a power adapter which is regulated by a voltage regulator, ensuring the board only recieves 3.3V. Furthermore, there is an LED(IO5) as a test point for the project and push buttons which are digital inputs from the users to communicate on what they want to see from the OLED Screen. 
+
+The OLED itself uses I2C communications which is why it is wired through IO38(SCL) and IO41(SDA). There is also a USB-B to Micro USB connector that is needed which is why it is connected into both GPIO19(IO13) and GPIO20(14) as on the datasheet those two GPIO's are the only ones who directly connect to the USB communicator.
 
 ## Individual Block Diagram 
 
