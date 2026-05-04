@@ -9,6 +9,8 @@ The table below are requirements formed based on the needs of Team 307's project
 
 | **Requirement Description** | **Measure of<br> Threshold** | **Target<br>Measure** |**Stretch<br>Requirement<br>(Y-N)**|
 |-----------------------------| ----------------- | ----------------- | :-----: |
-| Surface mounted, 3.3V switching power regulatore | 3.2 Volts | 3.3 Volts | No |
-| Surface mounted microcontroller | 1 PIC or ESP | 8-bit PIC | No |
+| Surface Mounted, 3.3V Switching Power Regulator | 3.2 Volts | 3.3 Volts | No |
+| Surface Mounted Microcontroller | 1 PIC or ESP | 8-bit PIC | No |
 | OLED Screen| Be able to showcase data  | Allows users to be able to see data by interacting with screen | No |
+| Wired Communication | Ability to receive/send wired data (RX/TX) |  Receive/Send wired data through 8-pin headers | No |
+| Wireless Communication | Able to receive/send Wifi data | Receive/Send Wifi data using MQTT | Yes |
