@@ -31,6 +31,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/06-PCB-Design/pcbDesign/</loc>
+         <lastmod>2026-05-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/08-Microcontroller/Microcontroller/</loc>
          <lastmod>2026-05-05</lastmod>
          <changefreq>daily</changefreq>
