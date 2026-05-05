@@ -19,7 +19,7 @@ This page outlines the main components selected for the Human Machine Interface 
 | ----------------- | ----------------- |
 | Inexpensive compared to others | Needs correct orientation | 
 | Easy to install | polarity needs to correct | 
-| Already given CAD Model | Familar |
+| Already given CAD Model | -- |
 
 ### Choice 2: Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Surface Mount
 
@@ -47,9 +47,21 @@ This page outlines the main components selected for the Human Machine Interface 
 | Detailed Datasheet | Different CAD Model | 
 | Operating Temperature: -25˚C to +85˚C | --- |
 
+### Choice 4: California JOS Barrel Jack
+![Cali Barrel](PWCal.png)
+
+* **Price:** $8.99/10
+* **Product Link:** [California JOS](https://www.amazon.com/California-JOS-Breadboard-Friendly-Mounting-Female/dp/B09XH1XJZT/ref=sxin_18_pa_sp_search_thematic_sspa?content-id=amzn1.sym.3a6fbbbd-497f-4963-9773-14d8cc6a4e5a%3Aamzn1.sym.3a6fbbbd-497f-4963-9773-14d8cc6a4e5a&cv_ct_cx=dc%2Bpower%2Bjack&keywords=dc%2Bpower%2Bjack&pd_rd_i=B09XH1XJZT&pd_rd_r=b8d70ee1-4108-42bb-bc51-9129a5f0ea59&pd_rd_w=Pcfna&pd_rd_wg=VKUDj&pf_rd_p=3a6fbbbd-497f-4963-9773-14d8cc6a4e5a&pf_rd_r=R403WSAFK9JVM6ZRQW5M&qid=1777933046&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-383bc08e-f3b5-4928-b079-a9607486ab19-spons&aref=jfoH8SsxW8&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1)
+
+| **Pros** | **Cons** |
+| ----------------- | ----------------- |
+| A TH component | No detailed Datasheet  | 
+| Familiar Part | --- | 
+| Bulk cost is affordable | --- |  
+
 ### Selected Component
 
-The component selected for the power source is option 1: CONN PWR JACK 1.35X3.5MM SOLDER. The main reason is the pricing being significantly cheaper if ordered in bulk as this is a critical piece for the PCB. Furthermore, this item is given in class and something that we are familiar when working with it for other labs throughout the course. 
+The component selected for the power source is option 4: California JOS Barrel Jack. The main reason is the pricing being significantly cheaper if ordered in bulk as this is a critical piece for the PCB. 
 
 ## Power Regulator
 
@@ -92,9 +104,21 @@ The component selected for the power source is option 1: CONN PWR JACK 1.35X3.5M
 | Can handle -40°C ~ 125°C | Can be difficult to install | 
 | Saves space on the PCB Board | --- |
 
+### Option 4: Switching Regulator IC Positive Fixed 3.3V 1 Output 1A TO-220-5
+![Class Regulator](switch.webp)
+
+* **Price:** $2.23/each
+* **Product Link:** [LM2575D2T-3.3R4G](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688?s=N4IgTCBcDaIDIFkwFYDsyAiYAqBaAzAHT4BKALAOIgC6AvkA)
+
+| **Pros** | **Cons** |
+| ----------------- | ----------------- |
+| Given in Class| Out of the 4 options, it is expensive | 
+| Has a detailed datasheet | Need Flux paste for easy installation | 
+| Easy to install/uninstall | Need hot gun to uninstall|
+
 ### Selected Component
 
-The selected component for this project is the second option: Switching Regulator IC Positive Fixed 3.3V. The reason why is because it has all the pinouts that are required for the main project and is inexpensive to order multiple for different scenerios. Furthermore, it would easier to implement in the PCB design and when soldering in-person.
+The selected component for this project is Option 4: Switching Regulator IC Positive Fixed 3.3V 1 Output 1A TO-220-5. This component was given by the professor which made research and installation easier as there was enough time given to learn about it. Not only that, the spacing between the prongs made it easy to solder in even if there wasn't Flux paste available.
 
 ## OLED Screen
 
@@ -146,5 +170,7 @@ The component selected is option 1: OLED LCD Display Board Module. The reason wh
 | **Component** | **Selection** | **Rationale** |
 | ----------------- | ----------------- | ----------------- |
 | OLED Display | [OLED Screen](https://www.amazon.com/Songhe-0-96-inch-I2C-Raspberry/dp/B085WCRS7C/) | This part was given in class which makes it easier to work with as all the programs that are needed are downloaded on the computer. |
-| Power Regulator | [AP2112K-3.3TRG1](https://www.digikey.com/en/products/detail/diodes-incorporated/AP2112K-3-3TRG1/4470746) | Can be easily soldered onto the board and has the correct pinouts that are required for the course. It is also inexpensive while ensuring minimal noise for the I2C. |
-| Power Source | [Pj-007](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices-/PJ-007/263523?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336967819&gbraid=0AAAAADrbLlgs4hw9LztVYDF5uuUEHngrn&gclid=Cj0KCQiAk6rNBhCxARIsAN5mQLsoOYExZJqYb1FyfbmE2W-5naa-h_G_fIaPOKq9fLMpaS6GJ0RPOZUaAtrQEALw_wcB) | It is the standard barreljack and can be easily soldered onto the board. |
+| Power Regulator | [LM2575D2T-3.3R4G](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688?s=N4IgTCBcDaIDIFkwFYDsyAiYAqBaAzAHT4BKALAOIgC6AvkA) | Can be easily soldered onto the board and has the correct pinouts that are required for the course. It is also given in class and ensures minimal noise for the I2C. |
+| Power Source | [California JOS Barrel Jack](https://www.amazon.com/California-JOS-Breadboard-Friendly-Mounting-Female/dp/B09XH1XJZT/ref=sxin_18_pa_sp_search_thematic_sspa?content-id=amzn1.sym.3a6fbbbd-497f-4963-9773-14d8cc6a4e5a%3Aamzn1.sym.3a6fbbbd-497f-4963-9773-14d8cc6a4e5a&cv_ct_cx=dc%2Bpower%2Bjack&keywords=dc%2Bpower%2Bjack&pd_rd_i=B09XH1XJZT&pd_rd_r=b8d70ee1-4108-42bb-bc51-9129a5f0ea59&pd_rd_w=Pcfna&pd_rd_wg=VKUDj&pf_rd_p=3a6fbbbd-497f-4963-9773-14d8cc6a4e5a&pf_rd_r=R403WSAFK9JVM6ZRQW5M&qid=1777933046&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-383bc08e-f3b5-4928-b079-a9607486ab19-spons&aref=jfoH8SsxW8&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1) | It is the standard barreljack and can be easily soldered onto the board. |
+
+Overall, these are the main three components needed for the main project to work. The major update is both power regulator and power source as they are the only things recently change from the main project.
