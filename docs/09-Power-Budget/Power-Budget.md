@@ -6,7 +6,7 @@ title: Power Budget
 
 The point of this power budget is to estimate the power required to operate the HMI Module based off the components selected from the [Component Selection page](https://apoolaz.github.io/apoola01.github.io/03-Component-Selection/Component-Selection/). Team 307 will be sharing a 12V of power which is displayed within the document while also showing which components would use the 3.3V and how much estimate current will be drawn. There is no battery used currently which is why that external power source 2 is left blank. 
 
-![budget1](1777939988600-8bb1bc75-5f96-4c98-8ab4-b925cac8bb41_1.png){style width:"350" height:"300;"}
+![budget1](FINALZPB-1.png){style width:"350" height:"300;"}
 
 
 ## Conclusions
@@ -17,4 +17,4 @@ When testing the board, there was no concerning signs of errors thanks to the gi
 
 ## Resources
 
-The power budget as a PDF download is available [*here*](FINALPWRBUDGET.pdf), and a Microsoft Excel Sheet [*here*](FINALPower_Budget_307.xlsx).
+The power budget as a PDF download is available [*here*](FINALZPB.pdf), and a Microsoft Excel Sheet [*here*](FINALZPower_Budget_307.xlsx).
