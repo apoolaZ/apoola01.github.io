@@ -25,9 +25,9 @@ This page will go over the selection of the microcontroller used for the HMI mod
 ## Pin layout for ESP32
 | Module         | # Available | Needed | Associated Pins  |
 | -------------- | ----------- | ------ | ------------------------------ |
-| UART           | 3           | 1      | Rx - RXD0 and Tx - TXD0 |
-| I2C            | 38          | 2      | IO15 and IO16 |
-| GPIO           | 38          | 8      | IO6/IO7/IO11/IO12/IO13/IO14/IO46/IO23                              |
-| LED            | 38          | 2      | IO10 and IO5                               |
-| USB Programmer | 2           | 2      | IO19 and IO20                              |
+| UART           | 3           | 1      | Rx - IO18 and Tx - IO6 |
+| I2C            | 38          | 2      | IO38(SCL) and IO41(SDA) |
+| GPIO           | 38          | 8      | IO6/IO7/IO11/IO12/IO13/IO14/IO46/IO23 |
+| LED            | 38          | 2      | IO5  |
+| USB Programmer | 2           | 2      | IO19 and IO20  |
 
