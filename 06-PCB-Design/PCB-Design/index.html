@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -812,6 +817,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PCB Design
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -821,6 +837,77 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB 3D
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-whole-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Whole View
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-power-plane" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Power Plane
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-ground-plane" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Ground Plane
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Files
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1128,6 +1215,68 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB 3D
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-whole-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Whole View
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-power-plane" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Power Plane
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcb-ground-plane" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB Ground Plane
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Files
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1151,6 +1300,18 @@
 
   <h1>PCB Design</h1>
 
+<h2 id="overview">Overview</h2>
+<p>This is the PCB Design of the OLED subsystem that uses the ESP32 mircocontroller. There is an 8-pin header on the upper right to allow communication between boards and same power and ground received from the daisy chain. Furthermore, the voltage regulator ensures 3.3V to the rest of the board to make sure that it doesn't blow up the major components. This is the updated PCB Design as the micro-usb port of the design is not linked to the power source, only the D+/D- to reflect the chnages I had to do for the hardware. There are a decent amount of test points and debuggers to make sure that when there is errors, there is somewhere to check. </p>
+<h2 id="pcb-3d">PCB 3D</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../3dF.png" data-desc-position="bottom"><img alt="3dF" src="../3dF.png"></a></p>
+<h2 id="pcb-whole-view">PCB Whole View</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../all.png" data-desc-position="bottom"><img alt="All" src="../all.png"></a></p>
+<h2 id="pcb-power-plane">PCB Power Plane</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../FCU.png" data-desc-position="bottom"><img alt="F.CU" src="../FCU.png"></a></p>
+<h2 id="pcb-ground-plane">PCB Ground Plane</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../BCU.png" data-desc-position="bottom"><img alt="B.Cu" src="../BCU.png"></a></p>
+<h2 id="files">Files</h2>
+<p>Here is the zip file of the whole project, including the gerber files located inside: <a href="../FINAL_OLEDSch.zip">OLED Files</a></p>
 
 
 
@@ -1158,6 +1319,8 @@
 
 
 
+  
+  
 
 
 
