@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/</loc>
-         <lastmod>2026-05-04</lastmod>
+         <lastmod>2026-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/01-Requirements/Requirements/</loc>
-         <lastmod>2026-05-04</lastmod>
+         <lastmod>2026-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/02-Block-Diagram/Block-Diagram/</loc>
-         <lastmod>2026-05-04</lastmod>
+         <lastmod>2026-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/03-Component-Selection/Component-Selection/</loc>
-         <lastmod>2026-05-04</lastmod>
+         <lastmod>2026-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/04-BOM/BOM/</loc>
-         <lastmod>2026-05-04</lastmod>
+         <lastmod>2026-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/05-Schematic/schematic/</loc>
-         <lastmod>2026-05-04</lastmod>
+         <lastmod>2026-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/08-Microcontroller/Microcontroller/</loc>
-         <lastmod>2026-05-04</lastmod>
+         <lastmod>2026-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/09-Power-Budget/Power-Budget/</loc>
-         <lastmod>2026-05-04</lastmod>
+         <lastmod>2026-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/10-API/API/</loc>
-         <lastmod>2026-05-04</lastmod>
+         <lastmod>2026-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
