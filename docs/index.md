@@ -9,7 +9,7 @@ tags:
 as part of<br>
 <font size= "8"> Submersible Exploration Device </font><br>
 for<br>
-<font size= "5"> Team 314 </font><br>
+<font size= "5"> Team 307 </font><br>
 
 **Preparation: May 4th, 2026**
 </center>
