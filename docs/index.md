@@ -11,7 +11,7 @@ as part of<br>
 for<br>
 <font size= "5"> Team 314 </font><br>
 
-**Preparation: March 6th, 2026**
+**Preparation: May 4th, 2026**
 </center>
 
 ## Introduction
@@ -22,7 +22,7 @@ As a team member, my contributions to the team was to ensure assignments were su
 
 ### Project Summary
 
-The goal of this subsystem is to provide a HMI Module for the Team 307 which allows the user's the ability to interact with the device by controlling the speed of the machine with three options: Fast, neutral, stopping. In addition to that, the module will have the ability to give updated data to different boards while displaying it on screen. 
+The goal of this subsystem is to provide a HMI Module for the Team 307 which allows the user's the ability to interact with the device by allowing the users to change the direction of the motor by pressing a button either clockwise(0) or counterclockwise(1). In addition to that, the OLED Screen displays the distance data received from the distance sensor.
 
 * Link to the [Team 307's Report: ](https://egr-314-team-307-spring-2026.github.io/Team307.github.io/)
 
@@ -30,8 +30,14 @@ The goal of this subsystem is to provide a HMI Module for the Team 307 which all
 
 * To review the details and relationships between the system’s components, refer to the [Block Diagram](https://apoolaz.github.io/apoola01.github.io/02-Block-Diagram/Block-Diagram/) section of the datasheet.
 * To review the system’s components, refer to the [Component Selection](https://apoolaz.github.io/apoola01.github.io/03-Component-Selection/Component-Selection/).
+* To review the Bill of Materials, refer to the [BOM](https://apoolaz.github.io/apoola01.github.io/04-BOM/BOM/)
 * To review the layout of the individual subsystem, refer to the [Schematic](https://apoolaz.github.io/apoola01.github.io/05-Schematic/schematic/).
+* To review the PCB of the individual subsystem, refer to the [PCB](https://apoolaz.github.io/apoola01.github.io/06-PCB-Design/PCB-Design/).
+* To review the Reflection, refer to the [Reflection](https://apoolaz.github.io/apoola01.github.io/07-Reflection/Reflection/)
 * To review the microcontroller's layout, refer to the [Microcontroller](https://apoolaz.github.io/apoola01.github.io/08-Microcontroller/Microcontroller/).
 * To review power distribution, refer to the [Power Budget](https://apoolaz.github.io/apoola01.github.io/09-Power-Budget/Power-Budget/).
+* To review the API, refer to the [API](https://apoolaz.github.io/apoola01.github.io/10-API/API/)
+* To review the resources, refer to the [Resources](https://apoolaz.github.io/apoola01.github.io/11-Resources/Resources/)
+* To review the Hardware V2.0, refer to the [Hardware V2.0](https://apoolaz.github.io/apoola01.github.io/12-Hardware-V2.0/12-Hardware-V2.0/)
 
 
