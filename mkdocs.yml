@@ -1,10 +1,10 @@
-site_name: EGR 314 - Poola DataSheet
+site_name: EGR 314 - Poola Datasheet
 site_url: https://embedded-systems-design.github.io/EGR314DataSheetTemplate
 repo_url: https://github.com/embedded-systems-design/EGR314DataSheetTemplate
 edit_uri: edit/main/docs/
 theme:
   name: material
-  custom_dir: custom_theme/
+  custom_dir: custom_theme/partials
   palette:
     primary: blue
     accent: indigo
@@ -16,6 +16,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.tabs.overflow
     - toc.follow    
     - navigation.top
     - navigation.path
@@ -59,7 +60,7 @@ extra_javascript:
 not_in_nav: |
   static
   
-copyright: "Copyright &copy; 2026 Team 314 - Abriana"
+copyright: "Copyright &copy; 2026 Team 307"
 
 extra:
   generator: false
@@ -68,3 +69,16 @@ extra:
       link: /2026_spring
       name: 2023 Site    
 
+nav:
+  - Home: index.md
+  - Requirements: 01-Requirements/Requirements.md
+  - Block Diagram: 02-Block-Diagram/Block-Diagram.md
+  - Component Selection: 03-Component-Selection/Component-Selection.md
+  - Power Budget: 09-Power-Budget/Power-Budget.md
+  - Schematic: 05-Schematic/schematic.md
+  - BOM: 04-BOM/BOM.md
+  - PCB: 06-PCB-Design/PCB-Design.md
+  - API: 10-API/API.md
+  - Resources: 11-Resources/Resources.md
+  - Reflection: 07-Reflection/Reflection.md
+  - Hardware V2.0: 12-Hardware-V2.0/12-Hardware-V2.0.md
