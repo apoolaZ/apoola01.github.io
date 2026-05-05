@@ -3,74 +3,168 @@ title: API Message Definitions (OLED Subsystem)
 
 ## Overview
 
-For Team 307's submersible exploration device, we will be using a daisy chain network with UART to send messages within one another which came from Team 307's [Message Structure](https://egr-314-team-307-spring-2026.github.io/Team307.github.io/04-Team-Block-Diagram/Team-Diagram/). The communication roles for the UART in this module is split into two:
+For Team 307's submersible exploration device, we will be using a daisy chain network with UART to send messages within one another which came from Team 307's [Message Structure](https://egr-314-team-307-spring-2026.github.io/Team307.github.io/04-Team-Block-Diagram/Team-Diagram/). 
 
-* **Receives:** distance, pressure, temperature, status, errors, emergency stop
-* **Sends:** HMI display updates, HMI button events, optional status requests
+This page is a reflection of the coding done for the project. This is the [Zip file](ESP32_Code.zip) this whole page is based off of. 
 
-## Message Types
+## Subsystem Information
 
-### Message Type 3 - Distance Value
+| Item | Value |
+| ----- | ----- |
+| Subsystem Name | OLED / Human Interface Subsystem |
+| Subsystem ID | A |
+| Broadcast ID | X |
+| UART Baud Rate | 9600 |
+| Maximum Message Length | 64 bytes |
+| Message Prefix | AZ |
+| Message Suffix | YB |
 
-| Field | Byte(s) | Type | Variable Name | Min | Max |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-| Message Type | 1-2 | uint16_t | message_type | 3 | 3 |
-| Distance | 3-4 | uint16_t | distance_value | 0 | 4000 |
-| Padding | 5-58 | uint8_t[] | padding | 0 | 0 |
+The OLED subsystem uses UART to receive messages from other team boards, display the data on the OLED screen, forward messages that are not meant for it, and send a button press message to the motor subsystem. The code defines the OLED subsystem ID as A, uses broadcast ID X, and limits messages to 64 bytes.
 
-### Message Type 5 - Depth/Pressure Value
+## Message Format
 
-| Field | Byte(s) | Type | Variable Name | Min | Max |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-| Message Type | 1-2 | uint16_t | message_type | 5 | 5 |
-| Depth/Pressure | 3-4 | uint16_t | pressure_value | 0 | 10000 |
-| Padding | 5-58 | uint8_t[] | padding | 0 | 0 |
+All messages follow this format:
 
-### Message Type 6 - Temperature Value
+AZ \+ Sender ID \+ Receiver ID \+ Payload \+ YB
 
-| Field | Byte(s) | Type | Variable Name | Min | Max |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-| Message Type | 1-2 | uint16_t | message_type | 6 | 6 |
-| Temperature | 3-4 | uint16_t | temperature_c | 0 | 125 |
-| Padding | 5-58 | uint8_t[] | padding | 0 | 0 |
+Example:
 
-### Message Type 7 - HMI Display Update
+AZAGbutton onYB
 
-| Field | Byte(s) | Type | Variable Name | Min | Max |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-| Message Type | 1-2 | uint16_t | message_type | 7 | 7 |
-| Display Page | 3 | uint8_t | display_page | 0 | 5 |
-| Display Value | 4-5 | uint16_t | display_value | 0 | 9999 |
-| Padding | 6-58 | uint8_t[] | padding | 0 | 0 |
+| Section | Description |
+| ----- | ----- |
+| AZ | Start of message |
+| Sender ID | Device sending the message |
+| Receiver ID | Device receiving the message |
+| Payload | Message data |
+| YB | End of message |
 
-### Message Type 8 - HMI Button Event 
 
-| Field | Byte(s) | Type | Variable Name | Min | Max |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-| Message Type | 1-2 | uint16_t | message_type | 8 | 8 |
-| Button ID | 3 | uint8_t | button_id | 1 | 4 |
-| Event | 4 | uint16_t | button_event | 0 | 2 |
-| Padding | 5-58 | uint8_t[] | padding | 0 | 0 |
+# **Valid Team IDs**
 
-### Message Type 10 - System Status Response
+The OLED subsystem recognizes the following team IDs:
 
-| Field | Byte(s) | Type | Variable Name | Min | Max |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-| Message Type | 1-2 | uint16_t | message_type | 10 | 10 |
-| Status Code | 3 | uint8_t | status_code | 0 | 5 |
-| Padding | 4-58 | uint8_t[] | padding | 0 | 0 |
+A, E, D, J, G, k, Z
 
-### Message Type 11 - Error Code
+Any message from an unknown sender is rejected.
 
-| Field | Byte(s) | Type | Variable Name | Min | Max |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-| Message Type | 1-2 | uint16_t | message_type | 11 | 11 |
-| Error Code | 3-4 | uint8_t | error_code | 0 | 999 |
-| Padding | 5-58 | uint8_t[] | padding | 0 | 0 |
 
-### Message Type 12 - Emergency Stop
+# **Messages Received by OLED**
 
-| Field | Byte(s) | Type | Variable Name | Min | Max |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-| Message Type | 1-2 | uint16_t | message_type | 12 | 12 |
-| Padding | 3-58 | uint8_t[] | padding | 0 | 0 |
+## **Message From Distance Subsystem**
+
+| Field | Value |
+| ----- | ----- |
+| Sender ID | J |
+| Receiver ID | A |
+| Payload Type | String |
+| Variable Name | distance_data |
+| Min Length | 1 character |
+| Max Length | 58 characters |
+| Example Payload | 1200 mm |
+| Example Message | AZJA1200 mmYB |
+
+**OLED Behavior:**  
+ When the OLED receives a message from sender J, it displays:
+
+Distance:  
+1200 mm  
+
+## **Message From Pressure Subsystem**
+
+| Field | Value |
+| ----- | ----- |
+| Sender ID | E |
+| Receiver ID | A |
+| Payload Type | String |
+| Variable Name | pressure_data |
+| Min Length | 1 character |
+| Max Length | 58 characters |
+| Example Payload | 650 |
+| Example Message | AZEA650YB |
+
+**OLED Behavior:**  
+ When the OLED receives a message from sender E, it displays:
+
+Pressure:  
+650  
+
+
+## **Message From Hall Sensor Subsystem**
+
+| Field | Value |
+| ----- | ----- |
+| Sender ID | D |
+| Receiver ID | A |
+| Payload Type | String |
+| Variable Name | hall_sensor_data |
+| Min Length | 1 character |
+| Max Length | 58 characters |
+| Example Payload | 300 |
+| Example Message | AZDA300YB |
+
+**OLED Behavior:**  
+ When the OLED receives a message from sender D, it displays:
+
+Hall Sensor:  
+300  
+
+## **Message From Motor Subsystem**
+
+| Field | Value |
+| ----- | ----- |
+| Sender ID | G |
+| Receiver ID | A |
+| Payload Type | String |
+| Variable Name | motor_data |
+| Min Length | 1 character |
+| Max Length | 58 characters |
+| Example Payload | motor on |
+| Example Message | AZGAmotor onYB |
+
+**OLED Behavior:**  
+ When the OLED receives a message from sender G, it displays:
+
+Motor Data:  
+motor on  
+
+# **Message Sent by OLED**
+
+## **Button Press Message**
+
+| Field | Value |
+| ----- | ----- |
+| Message Name | Button Event |
+| Sender ID | A |
+| Receiver ID | G |
+| Payload Type | String |
+| Variable Name | button_state |
+| Payload Value | button on |
+| Example Message | AZAGbutton onYB |
+
+**Purpose:**  
+ When the button connected to GPIO 35 is pressed, the OLED subsystem sends a message to subsystem G with the payload button on.
+
+
+# **Broadcast Message Handling**
+
+| Field | Value |
+| ----- | ----- |
+| Receiver ID | X |
+| Behavior | Display and forward |
+| Example Message | AZJXdistance 1200YB |
+
+If the OLED receives a broadcast message, it displays the sender and payload, then passes the message along the UART chain.
+
+# **Error Handling**
+
+The OLED subsystem handles these message errors:
+
+| Error | OLED Response |
+| ----- | ----- |
+| Message longer than 64 bytes | Displays ERROR Msg too long |
+| Unknown sender ID | Displays Bad Sender |
+| Message from itself | Displays From Self Ignored |
+| Invalid or incomplete message | Ignored |
+| Message not for OLED | Forwarded |
+
