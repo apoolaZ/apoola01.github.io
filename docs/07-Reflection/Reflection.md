@@ -15,20 +15,20 @@ Given the circumstances, I was able to fulfill majority of the individual requir
 
 ## Lessons Learned
 
-*Do the PCB early as possible to make sure to see what to fix before manufactoring.
-*Learning what codes to look at for the subsystem
-*Ordering the right parts cause it was expensive
-*Reading the datasheet is a must
-*Making sure power is outputting the correct voltage before soldering the rest of the parts
-*Having a fuse is essential to ensure the safety of the computer
-*Having testing points is the best way to check for issues
-*Have multiple parts cause everything is delicate
-*Learning the importance of wiring things correctly
-*Never give up 
+* Do the PCB early as possible to make sure to see what to fix before manufactoring.
+* Learning what codes to look at for the subsystem
+* Ordering the right parts cause it was expensive
+* Reading the datasheet is a must
+* Making sure power is outputting the correct voltage before soldering the rest of the parts
+* Having a fuse is essential to ensure the safety of the computer
+* Having testing points is the best way to check for issues
+* Have multiple parts cause everything is delicate
+* Learning the importance of wiring things correctly
+* Never give up 
 
 ## Recommendations for Future Students
-*Even though it seems like it's not going to work, don't give up cause the answer is right around the corner.
-*Never be afraid to ask for help from other classmates, TAs, or professors.
-*Read the DATASHEET of everything you order cause you may never know if you ordered the wrong component.
-*Make sure everything is organize cause it does get chaotic and the components are very small/delicate.
-*Do your PCB early as possible because hardware issues are a lot to work through and there isn't enough time sometimes.
+* Even though it seems like it's not going to work, don't give up cause the answer is right around the corner.
+* Never be afraid to ask for help from other classmates, TAs, or professors.
+* Read the DATASHEET of everything you order cause you may never know if you ordered the wrong component.
+* Make sure everything is organize cause it does get chaotic and the components are very small/delicate.
+* Do your PCB early as possible because hardware issues are a lot to work through and there isn't enough time sometimes.
